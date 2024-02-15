@@ -5,12 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 700px) {
-    .hidden-mobile {
-    display: none;
-  }
-}
-
 @media (max-width: 768px) {
     /* CSS rules for smaller screens */
 }
