@@ -5,6 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@media (max-width: 700px) {
+    .hidden-mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
     /* CSS rules for smaller screens */
 }
@@ -141,10 +147,6 @@ body {
     box-shadow: 0 0 20px #0ef;
 }
 
-.box-1 {
-    align-items: end;
-}
-
 .bint-box {
     display: inline-block;
     padding: 12px 28px;
@@ -160,7 +162,6 @@ body {
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef
-
 }
 
 .bint-box :hover {
@@ -168,6 +169,19 @@ body {
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan;
 }
+.box-1 {
+    align-items: end;
+}
+.box-2 {
+    height: 400px;
+    width: 400px;
+    background-image: url(IMG20231114211940__1_-removebg-preview\ \(1\).png);
+    border: 12px solid;
+    border-color: aquamarine;
+    border-radius: 50%;
+    box-shadow: 0px 0px 150px 77px rgba(45, 255, 196, 0.46);
+}
+
 /* About me section */
 
 .about {
@@ -177,31 +191,16 @@ body {
     gap: 1.5rem;
 }
 
-.about-img {
-    max-width: 630px;
-    height: auto;
-    width: 100%;
-    border-radius: 8px;
-}
-
-.about-img img {
-    max-width: 100%; 
-    height: auto;
-    margin-top: 30px;
-    margin-left: 50%;
-    transform: translateX(-50%); 
-}
-
-.box-2 {
+.about .box-2{
     height: 400px;
     width: 400px;
-    background-image: url(IMG20231114211940__1_-removebg-preview.png);
-    border: 12px solid;
+    background-image: url(lucky-removebg-preview.png);
+    border: 5px solid;
     border-color: aquamarine;
-    border-radius: 50%;
+    border-radius: 20%;
     box-shadow: 0px 0px 150px 77px rgba(45, 255, 196, 0.46);
+    margin-left: 20px;
 }
-
 .about-text {
     max-width: 630px;
     height: auto;
