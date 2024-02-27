@@ -1,0 +1,187 @@
+
+@media screen and (max-device-width:768px ) {
+   
+    .nav_toggle {
+        display: block;
+        margin-right: 20px;
+    }
+    #click{
+        display:none;
+    }
+    .navbar ul {
+        flex-direction: column;
+        position: fixed;
+        left:-100%;
+        background-color: #051129;
+        width: 100%;
+        padding-block: 30px;
+        display: block;
+        padding-block: 30px;
+        top: 100px;
+        transition: all 0.3s ease;
+    }
+    nav ul li{
+        margin: 40px 0;
+    }
+
+    /*.navbar {
+        position: absolute;
+        background-color: #0ef;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 30px;
+    }*/
+
+    /*.header .navbar.active {
+        left: 0;
+    }*/
+    #click:checked ~ ul{
+    left: 0%;
+    }
+
+   .navbar ul a {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+        
+    .logo{
+        font-size: 100px;
+        
+    }
+    #bars {
+        font-size: 80px;
+    }
+
+    .home {
+        width: 80%;
+
+    }
+
+    .home-content .text {
+        font-size: 40px;
+    }
+
+    .bint-box {
+        font-size: 25px;
+    }
+
+    .about-text .bca {
+        font-size: 35px;
+    }
+
+    .about-text .about_text {
+        font-size: 30px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .serivices-list {
+        width: 50%;
+    }
+
+    .web_services {
+        width: 750px;
+    }
+
+    .web_services .heading_services {
+        font-size: 60px;
+    }
+
+    .web_services .pairagraf_seriviese {
+        font-size: 20px;
+    }
+
+    .web_services .read {
+        font-size: 35px;
+    }
+
+    /*Skills
+
+ Technical Skills */
+
+    .sub-title {
+        font-size: 80px;
+    }
+
+    .skill-id {
+        width: 100%;
+    }
+
+    .container1 .heading1 {
+        font-size: 30px;
+    }
+
+    .container1_heading1 {
+        width: 350px;
+    }
+
+    .container1_heading1 .heading1 {
+        font-size: 35px;
+    }
+
+    .Technical-bars .bar {
+        font-size: 80px;
+    }
+
+    .Technical-bars .bar .info span {
+        font-size: 40px;
+    }
+
+    .Technical-bars .progress-line html {
+        width: 600px;
+    }
+
+    .Technical-bars .progress-line span::after {
+        font-size: 30px;
+
+    }
+
+    .container2 .heading1 {
+        font-size: 30px;
+    }
+
+    .radial-bar {
+        margin-bottom: 80px;
+    }
+
+    .radial-bars #Creativity {
+        width: 100%;
+    }
+
+    .radial-bars #Communication {
+        width: 100%;
+    }
+
+    .radial-bars #Problem_Solving {
+        width: 100%;
+    }
+
+    .radial-bars #Teamwork {
+        width: 100%;
+    }
+
+    .radial-bars .radial-bar svg {
+        height: 200px;
+        width: 180px;
+    }
+
+    .radial-bar .percentage {
+        font-size: 30px;
+    }
+
+    .radial-bar .text {
+        font-size: 30px;
+        bottom: -30px
+    }
+
+    .project-section {
+        padding-top: 30px;
+    }
+
+    .project-title {
+        padding-top: 30px;
+    }
+}
