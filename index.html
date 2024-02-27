@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
     <!--Font asome icon  css link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -13,6 +11,9 @@
     <!--Box icon css link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Css file-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media-queries.css">
 
 </head>
 
@@ -20,15 +21,26 @@
     <!--nav bar-->
     <header class="header">
         <a href="#" class="logo">portfolio </a>
+        <nav class="navbar active" id="navbar">
 
-        <nav class="navbar">
-            <a href="#home_id" style="--1:1" class="active">Home</a>
-            <a href="#about" style="--1:2">About</a>
-            <a href="#serivicse_id" style="--1:2">Serivicse</a>
-            <a href="#skill-id" style="--1:3">Skill</a>
-            <a href="#project_id" style="--1:3">Projects</a>
-            <a href="#" style="--1:4">Contact</a>
-        </nav>
+            <input type="checkbox" id="click">
+            <label for="click" class="nav_toggle hover_link">
+                <i class="fa-solid fa-bars" id="bars" style="color: #00eeff;"></i>
+            </label>
+            
+            <ul>
+          <li> <a href="#home_id" style="--1:1" class="active_li" >Home</a></li> 
+          <li> <a href="#about" style="--1:2" >About</a></li> 
+          <li> <a href="#serivicse_id" style="--1:2" >Serivicse</a></li> 
+          <li> <a href="#skill-id" style="--1:3" >Skill</a></li> 
+          <li> <a href="#project_id" style="--1:3" >Projects</a></li> 
+          <li> <a href="#" style="--1:4" >Contact</a></li> 
+        </ul>
+        </nav>  <!-- 
+        <a href="#" class="nav_toggle hover_link" id="nav_toggle">
+            <i class="fa-solid fa-bars" id="bars" style="color: #00eeff;"></i>
+        </a>  -->
+
     </header>
     <!-- home section-->
 
@@ -47,7 +59,7 @@
                         class="fa-brands fa-instagram"></i></a>
 
             </div>
-            <a href="#" class="bint-box">More About</a>
+            <a href="javascript:void(0)" class="bint-box">More About</a>
 
         </div>
 
@@ -67,8 +79,8 @@
         <div class="about-text">
             <h2>About<span>me</span></h2>
             <h4>Full Stack Developer </h4>
-            <h4>Pursuing Bachelor of Computer Applications Education on parul university</h4>
-            <p>
+            <h4 class="bca">Pursuing Bachelor of Computer Applications Education on parul university</h4>
+            <p class="about_text">
                 I've been honing my skills and learning about the world since my inception, constantly absorbing
                 information from diverse sources. My expertise lies in language comprehension, understanding context,
                 and generating human-like text. I don't have a job history or traditional achievements, but my
@@ -85,10 +97,10 @@
         <div class="container">
             <h1 class="sub-title">My <span>Services</span></h1>
             <div class="serivices-list">
-                <div>
+                <div class="web_services">
                     <i class='bx bx-code' style='color:#00eeff'></i>
-                    <h2>Web Developer</h2>
-                    <p>
+                    <h2 class="heading_services">Web Developer</h2>
+                    <p class="pairagraf_seriviese">
                         Welcome to our web development services! We specialize in crafting exceptional, user-centric
                         websites tailored to meet your unique needs. Whether you're a startup, small business, or a
                         large enterprise, we have the expertise to bring your vision to life on the digital frontier.
@@ -96,10 +108,10 @@
                     <a href="#" class="read">lern More</a>
                 </div>
 
-                <div>
+                <div class="web_services">
                     <i class='bx bx-crop' style='color:#00eeff'></i>
-                    <h2>Web Design</h2>
-                    <p>
+                    <h2 class="heading_services">Web Design</h2>
+                    <p class="pairagraf_seriviese">
                         In the digital age, your website serves as the virtual storefront of your business. It's not
                         just about having an online presence; it's about making a lasting impression. At [Your Company
                         Name], we specialize in crafting captivating and functional websites tailored to your unique
@@ -108,10 +120,10 @@
                     <a href="#" class="read">lern More</a>
                 </div>
 
-                <div>
+                <div class="web_services">
                     <i class='bx bxl-apple' style='color:#00eeff'></i>
-                    <h2>Digital marketing</h2>
-                    <p>
+                    <h2 class="heading_services">Digital marketing</h2>
+                    <p class="pairagraf_seriviese">
                         Digital marketing services encompass a wide range of strategies and techniques aimed at
                         promoting products, services, or brands through digital channels. These services are crucial for
                         businesses aiming to establish a strong online presence, engage with their target audience, and
@@ -130,7 +142,9 @@
     <h1 class="sub-title">My <span>Skills</span></h1>
     <section id="skill-id">
         <div class="container1" id="Skills">
-            <h1 class="heading1">Technical Skills</h1>
+            <div class="container1_heading1">
+                <h1 class="heading1">Technical Skills</h1>
+            </div>
             <div class="Technical-bars">
                 <div class="bar">
                     <i class='bx bxl-html5' style='color:#c95d2e'></i>
@@ -197,11 +211,11 @@
         </div>
 
         <!-- Professional Skills -->
-        <div class="container1">
+        <div class="container2">
             <h1 class="heading1">Professional Skills</h1>
 
             <div class="radial-bars">
-                <div class="radial-bar">
+                <div class="radial-bar" id="Creativity">
                     <svg class="progress-svg" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="path path-1" cx="100" cy="100" r="80"></circle>
@@ -210,7 +224,7 @@
                     <div class="text">Creativity</div>
                 </div>
 
-                <div class="radial-bar">
+                <div class="radial-bar" id="Communication">
                     <svg class="progress-svg" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="path path-2" cx="100" cy="100" r="80"></circle>
@@ -219,7 +233,7 @@
                     <div class="text">Communication</div>
                 </div>
 
-                <div class="radial-bar">
+                <div class="radial-bar" id="Problem_Solving">
                     <svg class="progress-svg" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="path path-3" cx="100" cy="100" r="80"></circle>
@@ -228,7 +242,7 @@
                     <div class="text">Problem Solving</div>
                 </div>
 
-                <div class="radial-bar">
+                <div class="radial-bar" id="Teamwork">
                     <svg class="progress-svg" viewBox="0 0 200 200">
                         <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                         <circle class="path path-4" cx="100" cy="100" r="80"></circle>
