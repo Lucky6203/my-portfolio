@@ -630,7 +630,7 @@ section{
 .project-section{
     display:flex;
     justify-content: center;
-    padding-top: 100px;
+    
 }
 .project{
     color: aliceblue;
@@ -642,13 +642,10 @@ section{
 .project-title{
     text-align: center;
     font-size: 60px;
-   padding-top: 100px; 
+
 }
 .project-title span{
     color: #0ef;
-}
-.project-container{
-    padding: 90px;
 }
 
 .project-list{
@@ -724,4 +721,122 @@ section{
 
 .project-list div:hover{
     transform: translateY(-10px);
+}
+
+/* contact */
+.contact_us {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+
+.contact_about {
+    height: 400px;
+    width: 600px;
+}
+
+.contact_title {
+    margin-left: 150px;
+    font-size: 40px;
+}
+
+.contact_title span {
+    color: #0ef;
+}
+
+.contact_work{
+   font-size: 20px;
+   margin-top: 15px;
+   font-weight: bold;
+}
+
+.contact_info{
+    margin-top: 15px;
+}
+.contact_icon{
+    display: flex;
+   
+}
+.prsnol_contact{
+    margin-top: 25px;
+}
+#map{
+    background-color: ;
+    border: 2px solid #0ef;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 30px;
+   
+}
+.loction i{
+    font-size: 20px;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 12px;
+    color: #0ef;
+}
+
+.prsonol_eamil i {
+    font-size: 20px;
+}
+
+.prsonol_call{
+    margin-top: 10px;
+}
+
+.prsonol_call i {
+    font-size: 20px;
+}
+
+.contact_from {
+    height: 400px;
+    width: 600px;
+
+}
+
+
+.contact_from input {
+    height: 40px;
+    width: 80%;
+    text-decoration: none;
+    background-color: #695d5db5;
+    font-size: larger;
+    color:white ;
+    border-radius: 5px;
+}
+
+.contact_from textarea {
+    height: 170px;
+    width: 80%;
+    margin-top: 5px;
+    text-decoration: none;
+    background-color: #695d5db5;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.read_contact {
+    display: inline-block;
+    padding: 12px 28px;
+    width: 80%;
+    margin-top: 10px;
+    background: #0ef;
+    font-size: 16px;
+    color: #081b29;
+    text-decoration: none;
+    border-radius: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+
+}
+
+.read_contact:hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan;
 }
