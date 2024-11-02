@@ -14,6 +14,14 @@
     <!-- Css file-->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="media-queries.css">
+    <!--java scprit malir api link  -->
+
+    <!-- Include EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Include your JavaScript file -->
+    <script type="text/javascript" src="mens.js"></script>
+    <!-- map api-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 
 </head>
 
@@ -34,7 +42,7 @@
           <li> <a href="#serivicse_id" style="--1:2" >Serivicse</a></li> 
           <li> <a href="#skill-id" style="--1:3" >Skill</a></li> 
           <li> <a href="#project_id" style="--1:3" >Projects</a></li> 
-          <li> <a href="#" style="--1:4" >Contact</a></li> 
+          <li> <a href="#contact" style="--1:4" >Contact</a></li> 
         </ul>
         </nav>  <!-- 
         <a href="#" class="nav_toggle hover_link" id="nav_toggle">
@@ -262,6 +270,7 @@
         <div class="project" id="project"></div>
         <div class="project-container">
             <h1 class="project-title">My <span>Project</span></h1>
+           
             <div class="project-list">
                 <div>
                     <i class='bx bxl-html5' style='color:#c95d2e'> </i> <i class='bx bxl-css3'
@@ -275,8 +284,67 @@
                     <a href="project.html" class="read">More Projects</a>
                 </div>
             </div>
-        </div>
+        
+        
     </section>
+    <!-- Countact section -->
+
+    <section class="contact_us" id="contact">
+
+        <div class="contact_about">
+            <h1 class="contact_title">Contact<span>Me</span></h1>
+
+            <div class="contact_work">
+                <p>Let'Work Together</p>
+            </div>
+
+
+            <p class="contact_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eius consequuntur ad
+                dolores qui nemo
+                doloremque </p>
+
+            <div class="prsnol_contact">
+
+                <div class="prsonol_eamil">
+                    <P><i class="fa-solid fa-square-envelope fa-rotate-180" style="color: #0ef;"></i> lk502295@gmail.com
+                    </P>
+                </div>
+
+
+                <div class="prsonol_call">
+                    <p> <i class="fa-solid fa-phone" style="color: #0ef;"></i> 6203708517</p>
+
+                </div>
+
+            </div>
+            <div class="contact_icon">
+                <div class="home-sci">
+                    <a href="#" style="--1:5"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" style="--1:6"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <div id="map">
+                    <p class="loction"><i class="fa-solid fa-location-dot" style="--1:6"></i></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="contact_contner">
+
+            <div class="contact_from">
+                <div class="contact_item">
+                    <form id="emailForm" onsubmit="sendMail(); return false;">
+                        <input type="text" id="name" name="name" placeholder="Enter your Name" required><br><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+                        <textarea id="message" name="message" rows="4" placeholder="Write a message"
+                            required></textarea><br>
+                        <button type="submit" name="send" class="read_contact" value="send">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     <script src="mens.js"></script>
 </body>
 
