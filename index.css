@@ -449,15 +449,15 @@ section{
 }
 
 .progress-line.c span {
-    width: 75%;
+    width: 50%;
 }
 
 .progress-line.java span {
-    width: 25%;
+    width: 60%;
 }
 
 .progress-line.php span {
-    width: 30%;
+    width: 75%;
 }
 
 .progress-line span::after {
@@ -487,15 +487,15 @@ section{
 }
 
 .progress-line.c span::after {
-    content: "75%";
+    content: "50%";
 }
 
 .progress-line.java span::after {
-    content: "25%";
+    content: "60%";
 }
 
 .progress-line.php span::after {
-    content: "30%";
+    content: "75%";
 }
 
 .progress-line span::before {
